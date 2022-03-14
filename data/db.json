@@ -1,0 +1,40 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "welcome to the new blog",
+      "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "tags": [
+        "webdev",
+        "coding",
+        "news"
+      ]
+    },
+    {
+      "id": 2,
+      "title": "top 5 CSS tips",
+      "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "tags": [
+        "css",
+        "webdev",
+        "coding"
+      ]
+    },
+    {
+      "title": "asd",
+      "body": "asdas",
+      "tags": [
+        "asd"
+      ],
+      "id": 3
+    },
+    {
+      "title": "첫번째글입니다.",
+      "body": "머통령 되기 전부터 재앙이보다 일을 잘하노 ㅋㅋㅋㅋ03.14 15:52:16\nㅇㅇ(221.167)지금 집값 잡는건 양도세 존나 내리고 그 내린거 만큼 보유세 존나 올리는 극단적인 처방 말곤 없을텐데.. 똥바가지 진짜 심하게 뒤집어 쓰겠다..ㄷㄷㄷㄷ03.14 15:52:19삭제\nㅇㅇ(211.116)나라망했음03.14 15:52:53삭제\nBABYMETAL갤로그로 이동합니다.근거는?03.14 15:53:16\nㅇㅇ(211.116)이미 망했다는데03.14 15:54:17삭제\nㅇㅇ(223.39)전라도 망했대03.14 15:54:34삭제\nㅇㅇ(118.216)이미 망했는데 새삼스레03.14 16:29:41삭제\n댓글돌이\n\n윤석열이 바꿀 코인 시장..코인 상장∙비과제 현실로?\n1/20 \nㅇㅇ(211.192)윤석열 일하는거 볼때마다 문재앙 죽여버리고싶네03.14 15:53:28삭제\nㅇㅇ(223.39)\n03.14 15:53:51삭제\nㅇㅇ(175.223)문재인 이새끼는 진짜 5년동안 뭘했냐?\n부동산 관련 관료들도 죄다 비전문가, 꼴통들로 꽂고 개판 내놓고\n한다는 소리가 '이명박근혜보다는 낫다'",
+      "tags": [
+        "디시인사이드"
+      ],
+      "id": 4
+    }
+  ]
+}
