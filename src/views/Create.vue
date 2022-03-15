@@ -16,13 +16,15 @@
 <script>
 import addPost from "../composables/addPost";
 import { ref } from "@vue/reactivity";
+import {useRouter} from 'vue-router'
 export default {
   setup() {
-    const title = ref('');
-    const body = ref('');
-    const tag = ref('');
-    const tags = ref([]);
+    const title = ref('')
+    const body = ref('')
+    const tag = ref('')
+    const tags = ref([])
 
+    const router = useRouter()
     const handleKeydown = () => {
       if (!tags.value.includes(tag.value)) {
         tag.value = tag.value.replace(/\s/, '') //trim()
@@ -32,7 +34,9 @@ export default {
     }
     const handleSubmit = async ()=>{
         const post = {title : title.value, body : body.value, tags : tags.value}
-        addPost(post).load()  
+        await addPost(post, router).load()  
+       router.push('/')
+
 
 
     }

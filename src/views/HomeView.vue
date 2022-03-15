@@ -2,8 +2,9 @@
   <div class="home">
     <h1>home</h1>
     <div v-if="error">{{ error }}</div>
-    <div v-if="posts.length">
+    <div v-if="posts.length" class = "layout">
       <PostList :posts="posts"/>
+      <TagCloud :posts="posts"/>
 
     </div>
     <div v-else>
@@ -14,8 +15,11 @@
 
 <script>
 import PostList from '../components/PostList.vue'
+import TagCloud from '../components/TagCloud.vue'
+
 import getPosts from '../composables/getPosts'
 import Spinner from '../components/Spinner.vue'
+
 export default {
   name: "HomeView",
   setup() {
@@ -25,7 +29,7 @@ export default {
     return {posts,error}
   },
   components:{
-    PostList, Spinner
+    PostList, Spinner,TagCloud
   }
 }
 </script>
@@ -35,5 +39,10 @@ export default {
     max-width: 1200px;
     margin: 0 auto;
     padding: 10px;
+  }
+  .layout{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 20px;
   }
 </style>
