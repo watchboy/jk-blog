@@ -1,6 +1,6 @@
 import { ref } from 'vue'
 
-const addPost = (post) => {
+const addPost = (post,router) => {
 
     const load = async () => {
         const error = ref(null)
@@ -16,7 +16,6 @@ const addPost = (post) => {
                 body: JSON.stringify(post)
             })
             if (data.ok) {
-                this.$router.push('/')
 
             } else {
                 throw Error('예기치 못한 오류가 발생했습니다.')
